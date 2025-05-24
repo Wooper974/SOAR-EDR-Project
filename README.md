@@ -5,5 +5,17 @@ De ce fait, l'infrastructure de ce lab est composé en premier lieu d'un poste i
 
 # Installation de l'EDR LimaCharlie
 
+Nous allons tout d'abord mettre en place l'EDR sur une machine windows. Après avoir créer un compte sur la plateforme LimaCharlie, on peut désormais créer une clé d'installation 
+
+![installation-key](https://github.com/user-attachments/assets/204ce5a7-f65b-4c1e-8fd6-f0455e08b516)
+
+Une fois cette chose faite, nous pouvons désormais installer l'exécutable de l'EDR, qui nous demandera de renseigner la clé précédemment créer.
+
+SCREEN SUCCESS
+
+A partir de là, on peut deja observer à travers la console LimaCharlie, les possibilités de supervision qui s'offre à nous, comme le moyen d'isoler la machine, voir les processus en cours, les logiciels configurés en autorun sur le poste, exécuter des commandes à distance et bien d'autres choses encore.
+
+SCREEN SPLIT 4
+
  
 
