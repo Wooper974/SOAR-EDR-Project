@@ -75,7 +75,7 @@ Slack msg test
 
 # Création du Playbook
 
-La prochaine étape consiste à cette fois-ci envoyé de réelles informations issus de l'alerte reçu par Tines sur notre canal Slack.
+La prochaine étape consiste à cette fois-ci envoyer de réelles informations issus de l'alerte reçu par Tines sur notre canal Slack.
 Il convient d'abord de rappeler les champs qui nous intéressent : 
    * Nom de l'alerte 
    * Horaire
@@ -90,9 +90,31 @@ Il faut donc retrouver ces champs dans l'alerte reçu par Tines et les renseigne
 
 Tines champ msg
 
-Si on relance une alerte, on peut désormais observer sur notre canal Slack, les informations remontées et essentielles à un Analyste pour comprendre au mieux la situation : 
+Si on relance une alerte, on peut désormais observer sur notre canal Slack, les informations remontées et essentielles à un analyste pour comprendre au mieux la situation : 
 
 slack msg alert
+
+Ensuite, on va créer une page sur Tines pour donner la possibilité à l'analyste d'isoler la machine : 
+
+pages tines
+
+Une fois la page créee, on va s'intéresser au premier cas, lorsque l'analyste décidera de ne pas isoler la machine.
+
+On va de ce fait, créer un Trigger qui est lié à notre page, et nous devons ici faire attention à ce que le trigger correspond au champ souhaité (False dans notre cas) : 
+
+False Trigger
+
+Le trigger est ensuite lié à un autre message slack qui enverra l'information sur Slack : 
+
+slack trigger 1
+slack trigger 2 
+
+
+
+
+
+
+
 
 
 
