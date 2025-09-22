@@ -82,8 +82,8 @@ En lançant ce test, nous pouvons confirmer la réception du message de test sur
 
 # Création du Playbook
 
-La prochaine étape consiste à cette fois-ci envoyer de réelles informations issus de l'alerte reçu par Tines sur notre canal Slack.
-Il convient d'abord de rappeler les champs qui nous intéressent : 
+La prochaine étape consiste cette fois-ci, à envoyer de réelles informations issues de l’alerte reçue par Tines sur notre canal Slack.
+Il convient d’abord de rappeler les champs qui nous intéressent : 
    * Nom de l'alerte 
    * Horaire
    * Nom de la machine
@@ -93,63 +93,55 @@ Il convient d'abord de rappeler les champs qui nous intéressent :
    * Utilisateur de la machine
    * Lien LimaCharlie
 
-Il faut donc retrouver ces champs dans l'alerte reçu par Tines et les renseigner dans le message qu'on souhaite envoyer à Slack : 
+Il faut dorénavant retrouver ces champs dans l’alerte reçue par Tines et les renseigner dans le message que l’on souhaite envoyer à Slack : 
 
 ![tines champ msg](https://github.com/user-attachments/assets/5aafe25c-6c11-4d64-a1b0-30db32853273)
 
-
-Si on relance une alerte, on peut désormais observer sur notre canal Slack, les informations remontées et essentielles à un analyste pour comprendre au mieux la situation : 
+Si nous relançons une alerte, nous pouvons désormais observer sur notre canal Slack les informations remontées, essentielles pour qu’un analyste comprenne au mieux la situation : 
 
 ![slack msg alert](https://github.com/user-attachments/assets/67fe99f8-ca2f-498a-b186-79fce6dbf15e)
 
-
-Ensuite, on va créer une page sur Tines pour donner la possibilité à l'analyste d'isoler la machine : 
+Ensuite, nous allons créer une page sur Tines pour donner la possibilité à l’analyste d’isoler la machine : 
 
 ![page tines](https://github.com/user-attachments/assets/1a341a4b-0218-4354-acb4-d5d110945ac3)
 
-
-Une fois la page créee, on va s'intéresser au premier cas, lorsque l'analyste décidera de ne pas isoler la machine.
-
-On va de ce fait, créer un Trigger qui est lié à notre page, et nous devons ici faire attention à ce que le Trigger correspond au champ souhaité (False dans notre cas) : 
+Une fois la page créée, nous nous intéressons au premier cas : lorsque l’analyste décide de ne pas isoler la machine.
+On va de ce fait créer un *Trigger* lié à notre page, en veillant à ce que ce *Trigger* corresponde au champ souhaité (False dans notre cas) : 
 
 ![trigger false](https://github.com/user-attachments/assets/e2a95dfc-e19e-44a5-bda3-438f10a50829)
 
-
-Le trigger est ensuite lié à un autre message slack qui enverra l'information sur Slack : 
+Le *Trigger* est ensuite lié à un autre message slack qui enverra l'information sur notre canal : 
 
 ![slack trigger 1](https://github.com/user-attachments/assets/863bc59c-ff92-4112-8e23-1d17aa64782e)
 ![slack trigger 2](https://github.com/user-attachments/assets/cb0fd69d-ac26-400d-a8fe-8056c0e394e1)
 
-Maintenant, passons au cas où l'analyste décide d'isoler la machine. Après avoir mis en place un nouveau Trigger pour le cas True, nous allons dorénavant utiliser le template LimaCharlie pour Tines. L'un des Builds de ce template permet d'isoler directement l'endpoint en fonction du sid qu'il reçoit. 
+Passons maintenant au cas où l’analyste décide d’isoler la machine. Après avoir mis en place un nouveau *Trigger* pour le cas True, nous allons utiliser la template LimaCharlie pour Tines.
+L’un des Builds de ce template permet d’isoler directement l’endpoint en fonction du SID qu’il reçoit. 
 
-Avant d'appliquer ce Build, il faut relier LimaCharlie avec Tines. Pour cela, nous allons créer un nouveau credential nommé "LimaCharlie" sur Tines, et qui va contenir l'API de mon oragnisation sur LimaCharlie : 
+Avant d’appliquer ce Build, il faut relier LimaCharlie à Tines. Pour cela, nous allons créer un nouveau credential nommé « LimaCharlie » sur Tines, qui contiendra l’API de mon organisation sur LimaCharlie : 
 
 ![screen api tines lima](https://github.com/user-attachments/assets/e961a854-ce5c-4ff1-89be-091d6cd75772)
 
-
-Revenons au build d'isolation, où il ne faut pas oublier de renseigner le chemin exact de l'emplacement du sid lorsqu'une alerte est remonté sur Tines : 
+Revenons au Build d’isolation, sur lequel il ne faut pas oublier de renseigner le chemin exact de l’emplacement du SID lorsqu’une alerte est remontée sur Tines : 
 
 ![screen build isolate](https://github.com/user-attachments/assets/420551b6-559f-4c8e-880c-ced2a5a50569)
 
-
-Il ne nous reste plus qu'à ajouter à la fin un nouveau message slack pour signaler dans notre canal, que la machine a été isolée : 
+Il ne reste plus qu’à ajouter, à la fin, un nouveau message Slack pour signaler dans notre canal que la machine a été isolée : 
 
 ![screen slack isolate](https://github.com/user-attachments/assets/3418e821-7ba5-4e34-94c4-1505048bdb70)
 
-
-Si on lance une simulation où l'analyste décide d'appuyer sur l'option "Oui", on peut observer dans les détails de l'endpoint sur LimaCharlie, qu'il est désormais isolé du réseau : 
+Si nous lançons une simulation où l’analyste décide d’appuyer sur l’option « Oui », nous pouvons observer dans les détails de l’endpoint sur LimaCharlie, qu’il est désormais isolé du réseau : 
 
 ![final isolation limacharlie](https://github.com/user-attachments/assets/e76e761c-0ae4-49ea-875e-d47e258a5b91)
 
-
-Nous nous retrouvons à la fin avec cette arborescence dans Tines : 
+Nous obtenons à la fin cette arborescence dans Tines : 
 
 ![screen arbo tines](https://github.com/user-attachments/assets/6f79b457-c2de-4bcf-8fda-84ead51e9ce8)
 
 
-En résumé, Tines va suite à la récéption d'une alerte :
+En résumé, suite à la réception d'une alerte, Tines va : 
    * Envoyer un message contenant des informations de l'alerte sur Slack.
-   * Créer une page qui va résumer les informations et donner la possibilité à l'analyste d'isoler la machine.
+   * Créer une page résumant les informations et donnant la possibilité à l’analyste d’isoler la machine.
    
    * Selon le choix de l'analyste :
      * Ne pas isoler la machine et envoyer une notification sur Slack.
