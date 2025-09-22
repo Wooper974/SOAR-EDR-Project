@@ -69,7 +69,8 @@ Nous pouvons également retrouver l’alerte sur l’interface web de Tines :
 
 ![tines alert success](https://github.com/user-attachments/assets/efdfc1b7-a402-4820-ad62-27773a9afbf8)
 
-Maintenant, Tines doit être en mesure d’envoyer l’alerte reçue vers notre canal Slack. Pour commencer, nous allons simplement générer un message de test afin de confirmer que l’envoi de messages depuis Tines fonctionne correctement.  Tines offre la possibilité d’utiliser des *Templates* pour plusieurs solutions, dont Slack. Une fois la *template* Slack sélectionné, nous choisissons le Build « Send a message » et indiquons, dans les paramètres de ce build, l’ID du canal Slack ainsi qu’un message de test : 
+Maintenant, Tines doit être en mesure d’envoyer l’alerte reçue vers notre canal Slack. Pour commencer, nous allons simplement générer un message de test afin de confirmer que l’envoi de messages depuis Tines fonctionne correctement.  
+Tines offre la possibilité d’utiliser des *Templates* pour plusieurs solutions, dont Slack. Une fois la *template* Slack sélectionné, nous choisissons le Build « Send a message » et indiquons, dans les paramètres de ce build, l’ID du canal Slack ainsi qu’un message de test : 
 
 ![tines canad id msg test](https://github.com/user-attachments/assets/accd99a2-f068-4888-ba7c-da55b611bc85)
 
