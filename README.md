@@ -51,9 +51,6 @@ Il ne nous reste plus qu’à compléter la partie « réponse » de la règle, 
 
 ![SCREEN RESPONSE](https://github.com/user-attachments/assets/31aa803a-bca9-4549-bfa6-8c180e2d3270)
 
-![SCREEN DETECTION RESULT](https://github.com/user-attachments/assets/8041d6a7-2e58-4c84-962d-a810f2652a73)
-
-
 Si je relance LaZagne sur la machine victime, je peux désormais retrouver dans l’onglet *Detections* de LimaCharlie, une alerte m’indiquant l’exécution de LaZagne.
 ![detetc detce](https://github.com/user-attachments/assets/b48ddf6c-ce47-4f1c-97a0-542b46a7414f)
 
