@@ -61,7 +61,7 @@ Tout d’abord, nous devons faire en sorte que les alertes générées par LimaC
 
 ![Tines webhook](https://github.com/user-attachments/assets/8618c6e7-e4cb-4642-9f76-f30ec9ede7d8)
 
-L’URL du Webhook peut ensuite être renseignée dans l’onglet Outputs de LimaCharlie. Pour vérifier que la liaison est opérationnelle, nous allons exécuter à nouveau LaZagne sur la machine infectée et observer si l’alerte est bien transmise :
+L’URL du Webhook peut ensuite être renseignée dans l’onglet *Outputs* de LimaCharlie. Pour vérifier que la liaison est opérationnelle, nous allons exécuter à nouveau LaZagne sur la machine infectée et observer si l’alerte est bien transmise :
 
 ![tines lima succ](https://github.com/user-attachments/assets/fcc9818b-d75c-466b-b62a-7feb4f1e638a)
 
