@@ -35,7 +35,7 @@ Dans l’onglet Timeline de LimaCharlie, on peut retrouver la trace d’exécuti
 
 # Création de la règle de détection et de réponse
 
-Pour la règle de détection, nous devons identifier tout ce qui concerne l’exécution de LaZagne. Dans la timeline, on apprend que l’événement *NEW_PROCESS* est celui utilisé lorsque LaZagne se lance.
+Pour la règle de détection, nous devons identifier tout ce qui concerne l’exécution de LaZagne. Dans la timeline, on apprend que l’événement #NEW_PROCESS est celui utilisé lorsque LaZagne se lance.
 Ensuite, il faut également spécifier le système d’exploitation, dans notre cas Windows.
 Si nous regardons le champ COMMAND_LINE, LaZagne apparaît systématiquement dans ce champ lorsqu’il est exécuté.
 Dans le champ FILE_PATH, LaZagne figure toujours à la fin du chemin indiqué.
