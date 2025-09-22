@@ -23,7 +23,7 @@ J'ai choisi d'installer le malware LaZagne, qui permet de récupérer des identi
 
 Une fois le malware installé, je l'éxécute avec l'option "all" pour qu'on puisse facilement par la suite retrouver sa trace dans les logs de l'EDR :
 
-SCREEN EXECUTION ALL
+<img width="1073" height="370" alt="EXECUTION ALL" src="https://github.com/user-attachments/assets/35d46930-cb35-4b12-bb9c-00f592fd67a8" />
 
 Dans l'onglet Timeline de LimaCharlie, on peut retrouver la trace d'éxécution de LaZagne, qui comprend tout un tas d'informations qui va nous êtres utile pour construire notre règle de détection et de réponse. Parmi ces informations, les plus pertinentes sont les champs suivants: 
    * COMMAND_LINE
