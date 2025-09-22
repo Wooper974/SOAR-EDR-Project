@@ -104,7 +104,7 @@ Ensuite, nous allons créer une page sur Tines pour donner la possibilité à l�
 
 ![page tines](https://github.com/user-attachments/assets/1a341a4b-0218-4354-acb4-d5d110945ac3)
 
-Une fois la page créée, nous nous intéressons au premier cas : lorsque l’analyste décide de ne pas isoler la machine.
+Une fois la page créée, nous nous intéressons au premier cas : lorsque l’analyste décide de ne pas isoler la machine.  
 On va de ce fait créer un *Trigger* lié à notre page, en veillant à ce que ce *Trigger* corresponde au champ souhaité (False dans notre cas) : 
 
 ![trigger false](https://github.com/user-attachments/assets/e2a95dfc-e19e-44a5-bda3-438f10a50829)
