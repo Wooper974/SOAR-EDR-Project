@@ -48,7 +48,9 @@ Cette règle peut être traduite de la manière suivante :
 Le type d’événement doit être NEW_PROCESS et détecté sur un endpoint Windows. La fin du champ FILE_PATH doit se terminer par LaZagne.exe OU le champ COMMAND_LINE doit contenir la valeur LaZagne OU le HASH du fichier doit correspondre à celui spécifié dans la règle.
 
 Il ne nous reste plus qu’à compléter la partie « réponse » de la règle, en indiquant que nous souhaitons utiliser l’action *report*, ce qui permettra d’envoyer une notification lorsque l’alerte est déclenchée.
+
 ![SCREEN RESPONSE](https://github.com/user-attachments/assets/31aa803a-bca9-4549-bfa6-8c180e2d3270)
+
 ![SCREEN DETECTION RESULT](https://github.com/user-attachments/assets/8041d6a7-2e58-4c84-962d-a810f2652a73)
 
 
