@@ -29,7 +29,8 @@ Dans l'onglet Timeline de LimaCharlie, on peut retrouver la trace d'éxécution 
    * COMMAND_LINE
    * FILE_PATH
    * HASH
-SCREEN TIMELINE LAZAGNE
+<img width="1558" height="306" alt="timeline lazagne" src="https://github.com/user-attachments/assets/7ea2183c-9c47-4a2c-a589-80385f952c7d" />
+
 
 # Création de la règle de détection et de réponse
 
