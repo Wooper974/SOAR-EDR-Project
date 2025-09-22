@@ -17,7 +17,8 @@ Une fois cela fait, nous pouvons installer l’exécutable de l’EDR, qui nous 
 
 À partir de là, on peut déjà observer, via la console LimaCharlie, les possibilités de supervision qui s’offrent à nous : le moyen d’isoler la machine, voire de voir les processus en cours, les logiciels configurés en autorun sur le poste, d’exécuter des commandes à distance, et bien d’autres choses encore :
 
-SCREEN SPLIT 4
+![screen 4](https://github.com/user-attachments/assets/53d95ec2-e874-404a-9df3-6e8f3063b393)
+
 
 # Éxécution et visualisation du Malware
 
