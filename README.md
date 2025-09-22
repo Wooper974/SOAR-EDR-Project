@@ -24,7 +24,7 @@ SCREEN SPLIT 4
 J’ai choisi d’installer le malware LaZagne, qui permet de récupérer des identifiants et mots de passe stockés localement sur la machine.
 Une fois le malware installé, je l’exécute avec l’option « all » afin que l’on puisse facilement retrouver sa trace dans les logs de l’EDR :
 
-<img width="1073" height="370" alt="EXECUTION ALL" src="https://github.com/user-attachments/assets/35d46930-cb35-4b12-bb9c-00f592fd67a8" />
+<img width="1073" height="370" alt="EXECUTION ALL" src="https://github.com/user-attachments/assets/35d46930-cb35-4b12-bb9c-00f592fd67a8" />  
 
 Dans l’onglet *Timeline* de LimaCharlie, on peut retrouver la trace d’exécution de LaZagne, qui comprend tout un tas d’informations qui vont nous être utiles pour construire notre règle de détection et de réponse. Parmi ces informations, les plus pertinentes sont les champs suivants : 
    * COMMAND_LINE
