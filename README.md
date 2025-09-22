@@ -11,7 +11,7 @@ Nous allons tout d'abord mettre en place l'EDR sur une machine windows. Après a
 
 Une fois cette chose faite, nous pouvons désormais installer l'exécutable de l'EDR, qui nous demandera de renseigner la clé précédemment créer :
 
-SCREEN SUCCESS
+<img width="1422" height="136" alt="Success" src="https://github.com/user-attachments/assets/1cbe75e6-f611-4184-94c5-870b7f6ead63" />
 
 A partir de là, on peut deja observer à travers la console LimaCharlie, les possibilités de supervision qui s'offre à nous, comme le moyen d'isoler la machine, voir les processus en cours, les logiciels configurés en autorun sur le poste, exécuter des commandes à distance et bien d'autres choses encore :
 
