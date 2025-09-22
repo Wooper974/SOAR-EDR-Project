@@ -100,7 +100,7 @@ pages tines
 
 Une fois la page créee, on va s'intéresser au premier cas, lorsque l'analyste décidera de ne pas isoler la machine.
 
-On va de ce fait, créer un Trigger qui est lié à notre page, et nous devons ici faire attention à ce que le trigger correspond au champ souhaité (False dans notre cas) : 
+On va de ce fait, créer un Trigger qui est lié à notre page, et nous devons ici faire attention à ce que le Trigger correspond au champ souhaité (False dans notre cas) : 
 
 False Trigger
 
@@ -108,6 +108,21 @@ Le trigger est ensuite lié à un autre message slack qui enverra l'information 
 
 slack trigger 1
 slack trigger 2 
+
+Maintenant, passons au cas où l'analyste décide d'isoler la machine. Après avoir mis en place un nouveau Trigger pour le cas True, nous allons dorénavant utiliser le template LimaCharlie pour Tines. L'un des Builds de ce template permet d'isoler directement l'endpoint en fonction du sid qu'il reçoit. 
+
+Avant d'appliquer ce Build, il faut relier LimaCharlie avec Tines. Pour cela, nous allons créer un nouveau credential nommé "LimaCharlie" sur Tines, et qui va contenir l'API de mon oragnisation sur LimaCharlie : 
+
+screen api tines lima
+
+Revenons au build d'isolation, où il ne faut pas oublier de renseigner le chemin exact de l'emplacement du sid lorsqu'une alerte est remonté sur Tines : 
+
+screen build isolate
+
+Il ne nous reste plus qu'à ajouter à la fin un nouveau message slack pour signaler dans notre canal, que la machine a été isolée : 
+
+screen slack isolate
+
 
 
 
