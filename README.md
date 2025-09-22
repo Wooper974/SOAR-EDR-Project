@@ -5,6 +5,9 @@ De ce fait, l’infrastructure de ce lab est composée, en premier lieu, d’un 
 
 Vous trouverez ci-dessous le schéma résumant ce que je viens d’expliquer.
 
+<img width="977" height="751" alt="soar edr drawio" src="https://github.com/user-attachments/assets/754ad7ae-f70d-411c-960f-3dbe061dfb8e" />
+
+
 # Installation de l'EDR LimaCharlie
 
 Nous allons tout d’abord mettre en place l’EDR sur une machine Windows. Après avoir créé un compte sur la plateforme LimaCharlie, on peut désormais créer une clé d’installation :
