@@ -123,6 +123,24 @@ Il ne nous reste plus qu'à ajouter à la fin un nouveau message slack pour sign
 
 screen slack isolate
 
+Si on lance une simulation où l'analyste décide d'appuyer sur l'option "Oui", on peut observer dans les détails de l'endpoint sur LimaCharlie, qu'il est désormais isolé du réseau : 
+
+final isolation limacharlie
+
+Nous nous retrouvons à la fin avec cette arborescence dans Tines : 
+
+screen arbo tines
+
+En résumé, Tines va suite à la récéption d'une alerte :
+   * Envoyer un message contenant des informations de l'alerte sur Slack.
+   * Créer une page qui va résumer les informations et donner la possibilité à l'analyste d'isoler la machine.
+   
+   * Selon le choix de l'analyste :
+     * Ne pas isoler la machine et envoyer une notification sur Slack.
+     * Isoler la machine et envoyer une notification sur Slack.
+
+
+
 
 
 
