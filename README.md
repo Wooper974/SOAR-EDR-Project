@@ -96,7 +96,7 @@ Il faut dorénavant retrouver ces champs dans l’alerte reçue par Tines et les
 
 ![tines champ msg](https://github.com/user-attachments/assets/5aafe25c-6c11-4d64-a1b0-30db32853273)
 
-Si nous relançons une alerte, nous pouvons désormais observer sur notre canal Slack les informations remontées, essentielles pour qu’un analyste comprenne au mieux la situation : 
+Si nous relançons une alerte, nous pouvons désormais observer sur notre canal Slack les informations remontées, et qui sont essentielles pour qu’un analyste comprenne au mieux la situation : 
 
 ![slack msg alert](https://github.com/user-attachments/assets/67fe99f8-ca2f-498a-b186-79fce6dbf15e)
 
