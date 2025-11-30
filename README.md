@@ -18,7 +18,7 @@ Une fois cela fait, nous pouvons installer l’exécutable de l’EDR, qui nous 
 
 <img width="1422" height="136" alt="Success" src="https://github.com/user-attachments/assets/1cbe75e6-f611-4184-94c5-870b7f6ead63" />
 
-À partir de là, on peut déjà observer, via la console LimaCharlie, les possibilités de supervision qui s’offrent à nous : le moyen d’isoler la machine, voire de voir les processus en cours, les logiciels configurés en autorun sur le poste, d’exécuter des commandes à distance, et bien d’autres choses encore :
+À partir de là, on peut déjà observer, via la console LimaCharlie, les possibilités de supervision qui s’offrent à nous : le moyen d’isoler la machine, observer les processus en cours, les logiciels configurés en autorun sur le poste, d’exécuter des commandes à distance, et bien d’autres choses encore :
 
 ![screen 4](https://github.com/user-attachments/assets/53d95ec2-e874-404a-9df3-6e8f3063b393)
 
